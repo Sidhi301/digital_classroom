@@ -1,0 +1,152 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+}
+
+/* Header Styles */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.8em;
+    text-align: center;
+    flex: 1;
+}
+
+header .profile {
+    display: flex;
+    align-items: center;
+}
+
+header .profile button {
+    margin-left: 20px;
+    padding: 8px 16px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+header .profile button:hover {
+    background-color: #e64a19;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;  /* Fixed width for sidebar */
+    background-color: #b0d3f7;
+    color: white;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    box-sizing: border-box;  /* Ensure padding doesn't affect the overall width */
+    z-index: 1;  /* Ensure the sidebar is above other elements */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li button {
+    background-color: #34495e;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    width: 100%;
+    padding: 12px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.sidebar ul li button:hover {
+    background-color: #2980b9;
+}
+
+
+.content-wrapper {
+    margin-left: 220px; 
+    padding: 20px;
+    box-sizing: border-box; 
+    min-height: 100vh;  
+    display: flex;  
+    justify-content: center;
+}
+
+/* Content sections (Dashboard, Assignments, Grades) */
+.content-section {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    margin-top: 20px;
+    width: 100%;  
+    max-width: 1000px; 
+    box-sizing: border-box;
+}
+
+/* Show active content section */
+.content-section.active {
+    display: block;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;  
+}
+
+/* Section Title */
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+/* Assignment and Grade Lists */
+.assignment-list, .grade-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.assignment-list li, .grade-list li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.assignment-list li strong, .grade-list li strong {
+    color: #2980b9;
+}
+
+/* Sidebar Buttons */
+button.section-btn {
+    background-color: #34495e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    text-align: left;
+}
+
+button.section-btn:hover {
+    background-color: #2980b9;
+}
+
